@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>News homepage</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <!-- Centering page -->
+    <div class="items-center h-screen max-w-7xl mx-auto p-10">
+      <!-- Nav bar -->
+      <header>
+        <nav class="flex justify-between items-center mx-auto">
+          <div>
+            <img src="/assets/images/logo.svg" alt="logosvg" width="50px" />
+          </div>
+          <!-- Menu -->
+
+          <div class="hidden md:block">
+            <ul class="flex gap-6">
+              <li class="cursor-pointer hover:font-bold">Home</li>
+              <li class="cursor-pointer hover:font-bold">New</li>
+              <li class="cursor-pointer hover:font-bold">Popular</li>
+              <li class="cursor-pointer hover:font-bold">Trending</li>
+              <li class="cursor-pointer hover:font-bold">Categories</li>
+            </ul>
+          </div>
+
+          <!-- Hamburguer menu -->
+          <div class="md:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+        </nav>
+      </header>
+      <!-- Main card -->
+      <main class="tracking-wide">
+        <!-- 1st Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 pt-8">
+          <!-- Left column -->
+          <div class="md:col-span-2">
+            <img src="/assets/images/image-web-3-desktop.jpg" alt="webmobile" />
+            <!-- left mini section -->
+            <div class="grid md:grid-cols-2 pt-8">
+              <h1 class="text-6xl pr-4 font-bold">
+                The Bright Future of Web 3.0?
+              </h1>
+              <!-- right mini section -->
+              <div class="md:px-8 md:h-full pt-4">
+                <p class="text-sm font-bold text-slate-400">
+                  We dive into the next evolution of the web that claims to put
+                  power of platforms back into the hands of the people. But is
+                  it really fullfiling its promise?
+                </p>
+
+                <div class="flex items-center pt-4 justify-left md:pt-4">
+                  <button
+                    class="bg-orange-600 hover:bg-orange-400 text-white py-2 px-6 border border-gray-400 md:mt-6 uppercase text-sm"
+                  >
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- right column -->
+          <div class="md:mt-0 mt-4 px-6 md:ml-8 bg-slate-900 text-white">
+            <h2 class="text-yellow-600 text-4xl font-bold py-8">New</h2>
+
+            <div class="space-y-3 md:h-auto">
+              <div>
+                <h3 class="font-bold text-md py-2">
+                  Hydrogen VS Electric Cars
+                </h3>
+                <p class="font-light tracking-wide">
+                  Will Hydrogen-fueled cars ever catch up to EVs?
+                </p>
+
+                <br />
+              </div>
+
+              <hr />
+
+              <div class="py-2">
+                <h3 class="py-2 font-bold">The Downsides of Al Artistry</h3>
+                <p class="text-sm font-light">
+                  What are the possible adverse effects of on-demand Al image
+                  generation?
+                </p>
+                <br />
+              </div>
+
+              <hr />
+
+              <div>
+                <h3 class="py-2 font-bold">Hydrogen VS Electric Cars</h3>
+                <p class="text-sm pb-4 font-light">
+                  Will Hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2nd Section (3 columns) -->
+        <section class="grid md:grid-cols-3 py-8 gap-12">
+          <!-- 1st Column 2nd Section -->
+          <div class="flex">
+            <div>
+              <img
+                src="/assets/images/image-retro-pcs.jpg"
+                alt="retropcs"
+                class="h-32"
+              />
+            </div>
+
+            <div class="md:pl-4 md:w-10/12 md:space-y-4 pl-4">
+              <h2 class="font-bold text-slate-400 text-2xl">01</h2>
+              <h3 class="font-semibold text-lg">Reviving Retro PCs</h3>
+              <p class="text-slate-400 text-sm">
+                What happens when old PC's are given modern upgrades?
+              </p>
+            </div>
+          </div>
+          <!-- 2nd Column 2nd Section -->
+          <div class="flex">
+            <div>
+              <img
+                src="/assets/images/image-top-laptops.jpg"
+                alt="laptops"
+                class="h-32"
+              />
+            </div>
+
+            <div class="md:pl-4 md:w-9/12 md:space-y-4 pl-4">
+              <h2 class="font-bold text-slate-400 text-2xl">02</h2>
+              <h3 class="font-semibold text-lg">Top 10 Laptops 2022</h3>
+              <p class="text-slate-400 text-sm">
+                Our best picks for various needs and budgets
+              </p>
+            </div>
+          </div>
+          <!-- 3rd Column 2nd Section -->
+          <div class="flex">
+            <div>
+              <img
+                src="/assets/images/image-gaming-growth.jpg"
+                alt="gaming"
+                class="h-32"
+              />
+            </div>
+
+            <div class="md:pl-4 md:w-9/12 md:space-y-4 pl-4">
+              <h2 class="font-bold text-slate-400 text-2xl">03</h2>
+              <h3 class="font-semibold text-lg">The Growth of Gaming</h3>
+              <p class="text-slate-400 text-sm">
+                How the pandemic has sparked fresh opportunities
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
